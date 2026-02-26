@@ -1,0 +1,171 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #2563eb;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* BENEFICIOS */
+.beneficios {
+    padding: 80px 0;
+    background: #f9fafb;
+    text-align: center;
+}
+
+.beneficios-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CTA */
+.cta {
+    padding: 80px 0;
+    text-align: center;
+    background: #2563eb;
+    color: white;
+}
+
+.cta .btn {
+    margin-top: 20px;
+    background: white;
+    color: #2563eb;
+}
+
+.cta .btn:hover {
+    background: #e5e7eb;
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 0;
+    background: #111827;
+    color: white;
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
