@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre Producto</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <!-- HEADER PRINCIPAL -->
-    <header>
-        <nav>
-            <div class="logo">Logo</div>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">NombreProducto</div>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#">Funciones</a></li>
                 <li><a href="#">Soluciones</a></li>
                 <li><a href="#">Precios</a></li>
@@ -21,113 +22,72 @@
             </ul>
 
             <div class="nav-buttons">
-                <a href="#">Iniciar sesión</a>
-                <a href="#" class="btn-primary">Probar gratis</a>
+                <a href="#" class="btn-secondary">Iniciar sesión</a>
+                <a href="#" class="btn">Probar gratis</a>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
 
-        <!-- HERO PRINCIPAL -->
-        <section id="hero">
-            <article>
-                <h1>Título principal impactante</h1>
-                <p>Subtítulo descriptivo del producto SaaS.</p>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Título principal impactante</h1>
+                    <p>Subtítulo descriptivo del producto SaaS.</p>
 
-                <div class="hero-buttons">
-                    <a href="#" class="btn-primary">Comenzar</a>
-                    <a href="#" class="btn-secondary">Ver demostración</a>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn">Comenzar</a>
+                        <a href="#" class="btn-secondary">Ver demostración</a>
+                    </div>
                 </div>
-            </article>
 
-            <figure>
-                <img src="img/hero.png" alt="Vista previa del producto">
-            </figure>
-        </section>
-
-        <!-- LOGOS DE EMPRESAS -->
-        <section id="empresas">
-            <h2>Empresas que confían en nosotros</h2>
-            <div class="logos">
-                <img src="img/logo1.png" alt="Empresa 1">
-                <img src="img/logo2.png" alt="Empresa 2">
-                <img src="img/logo3.png" alt="Empresa 3">
+                <div class="hero-image">
+                    <img src="https://via.placeholder.com/500x300" alt="Vista del producto">
+                </div>
             </div>
         </section>
 
         <!-- BENEFICIOS -->
-        <section id="beneficios">
-            <h2>Beneficios principales</h2>
+        <section class="beneficios">
+            <div class="container">
+                <h2>Beneficios principales</h2>
 
-            <article>
-                <h3>Beneficio 1</h3>
-                <p>Descripción clara.</p>
-            </article>
+                <div class="beneficios-grid">
+                    <article>
+                        <h3>Beneficio 1</h3>
+                        <p>Descripción clara del beneficio.</p>
+                    </article>
 
-            <article>
-                <h3>Beneficio 2</h3>
-                <p>Descripción clara.</p>
-            </article>
+                    <article>
+                        <h3>Beneficio 2</h3>
+                        <p>Descripción clara del beneficio.</p>
+                    </article>
 
-            <article>
-                <h3>Beneficio 3</h3>
-                <p>Descripción clara.</p>
-            </article>
-        </section>
-
-        <!-- CARACTERÍSTICAS CON IMAGEN + TEXTO -->
-        <section id="caracteristicas">
-            <article>
-                <div>
-                    <h2>Organiza tu trabajo</h2>
-                    <p>Texto explicativo.</p>
+                    <article>
+                        <h3>Beneficio 3</h3>
+                        <p>Descripción clara del beneficio.</p>
+                    </article>
                 </div>
-                <figure>
-                    <img src="img/feature1.png" alt="Funcionalidad del sistema">
-                </figure>
-            </article>
+            </div>
         </section>
 
-        <!-- TESTIMONIOS -->
-        <section id="testimonios">
-            <h2>Lo que dicen nuestros clientes</h2>
-
-            <article>
-                <blockquote>
-                    “Este producto cambió nuestra forma de trabajar.”
-                </blockquote>
-                <p><strong>Nombre Cliente</strong> - Empresa</p>
-            </article>
-        </section>
-
-        <!-- CTA FINAL -->
-        <section id="cta-final">
-            <h2>Empieza hoy mismo</h2>
-            <a href="#" class="btn-primary">Probar gratis</a>
+        <!-- CTA -->
+        <section class="cta">
+            <div class="container">
+                <h2>Empieza hoy mismo</h2>
+                <a href="#" class="btn">Probar gratis</a>
+            </div>
         </section>
 
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <section>
-            <h3>Producto</h3>
-            <ul>
-                <li><a href="#">Funciones</a></li>
-                <li><a href="#">Precios</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Empresa</h3>
-            <ul>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </section>
-
-        <p>© 2026 Nombre Empresa</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Nombre Empresa</p>
+        </div>
     </footer>
 
 </body>
